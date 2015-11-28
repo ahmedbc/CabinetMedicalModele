@@ -3,5 +3,5 @@
   <groupId>com.cabinet.modele</groupId>
   <artifactId>CabinetMedicalModele</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 </project>
