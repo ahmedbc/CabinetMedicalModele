@@ -6,6 +6,31 @@
 	<persistence-unit name="pu1">
 
 
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<class>com.cabinet.modele.entities.User</class>
+		<class>com.cabinet.modele.entities.Role</class>
+		<class>com.cabinet.modele.entities.Client</class>
+		<class>com.cabinet.modele.entities.Medecin</class>
+		<class>com.cabinet.modele.entities.Creneau</class>
+		<class>com.cabinet.modele.entities.RendezVous</class>
+		<class>com.cabinet.modele.entities.Etablissement</class>
+		<class>com.cabinet.modele.entities.Service</class>
+
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.connection.username" value="cabinee" />
+			<property name="hibernate.connection.password" value="cabinee" />
+			<property name="hibernate.connection.url"
+				value="jdbc:postgresql://localhost:5432/cabinet_medical" />
+			<property name="hibernate.connection.Driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.ProgressDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+		</properties>
+
 	</persistence-unit>
 
 </persistence>
