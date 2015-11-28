@@ -5,4 +5,4 @@
  * @author bouchriha
  *
  */
-package com.cabinet.modele.entities;
+package com.cabinet.modele.entities; 
